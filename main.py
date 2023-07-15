@@ -20,13 +20,6 @@ def main():
         random.randint(40, 50),
         random.randint(10, 30),
     )
-    hero_attrs2 = (
-        random.randint(70, 100),
-        random.randint(70, 80),
-        random.randint(45, 55),
-        random.randint(40, 50),
-        random.randint(10, 30),
-    )
     villain_attrs = (
         random.randint(60, 90),
         random.randint(60, 90),
@@ -34,8 +27,6 @@ def main():
         random.randint(40, 60),
         random.randint(25, 40),
     )
-    hero1, hero2 = make_hero(*hero_attrs), make_hero(*hero_attrs2)
-    import ipdb; ipdb.set_trace()
     game = Game(make_hero(*hero_attrs), Villain(*villain_attrs))
     game.end_game()
 
